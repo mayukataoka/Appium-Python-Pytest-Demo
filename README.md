@@ -2,9 +2,9 @@
 
 https://github.com/mayukataoka/Appium-Python-Pytest-Demo/blob/master/test/test_android_notification.py
 
-## Steps
+#### Steps
 
-### 1 Open the screen with a button that triggers a notification
+1. Open the screen with a button that triggers a notification. 
 
 In stead of opening each screen one by one to reach the destination screen, directly open target activity.
 
@@ -25,10 +25,17 @@ or
         driver.start_activity(self.PACKAGE, self.ACTIVITY)
 
 ```
+1. Click on the button to trigger a notification
+1. Open the notification screen. 
 
+```
+        driver.open_notifications()
+```
+1. Verify that the correct notification appeared. 
+```
+        notification_from_joe = driver.find_element_by_id('android:id/title')
+        assert notification_from_joe.text == 'Joe'
 
-
-
-
+```
 
 ![Alt text](notification-screenshot.png?raw=true)
