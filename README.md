@@ -1,4 +1,6 @@
 ## Simple notification test with Appium, Python and Pytest fixture. 
+<img src="notification-screenshot.png" width="400" height="200">
+
 #### Test code
 
 https://github.com/mayukataoka/Appium-Python-Pytest-Demo/blob/master/test/test_android_notification.py
@@ -53,4 +55,3 @@ or
         assert notification_from_joe.text == 'Joe'
 
 ```
-<img src="notification-screenshot.png" width="200" height="400">
