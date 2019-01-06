@@ -3,6 +3,21 @@
 
 https://github.com/mayukataoka/Appium-Python-Pytest-Demo/blob/master/test/test_android_notification.py
 
+#### Test execution and output.
+```
+MAYUs-MacBook-Pro:Appium-Python-Pytest-Demo mayukataoka$ pytest test/test_android_notification.py 
+========================================================================================================== test session starts ===========================================================================================================
+platform darwin -- Python 3.7.1, pytest-4.0.2, py-1.7.0, pluggy-0.8.0
+rootdir: /Users/mayukataoka/github/Appium-Python-Pytest-Demo, inifile:
+collected 1 item                                                                                                                                                                                                                         
+
+test/test_android_notification.py .                                                                                                                                                                                                [100%]
+
+======================================================================================================= 1 passed in 12.52 seconds ========================================================================================================
+M
+```
+
+
 #### Test steps
 
 1. Open the screen with a button that triggers a notification. 
