@@ -2,4 +2,4 @@
 
 ### Notification screenshot
 
-![Alt text](notification-screenshot.png ?raw=true)
+![Alt text](notification-screenshot.png?raw=true)
