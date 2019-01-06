@@ -24,14 +24,10 @@ class TestAndroidBasicInteractions():
             }
         )
 
-        def fin():
-            take_screenhot_and_logcat(driver, device_logger, calling_request)
-            driver.quit()
+        yield driver
 
-        request.addfinalizer(fin)
-
-        driver.implicitly_wait(10)
-        return driver
+        take_screenhot_and_logcat(driver, device_logger, calling_request)
+        driver.quit()
 
     def test_should_send_notification_and_verifies_it(self, driver):
 
