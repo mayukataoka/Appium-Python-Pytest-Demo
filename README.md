@@ -54,4 +54,4 @@ or
 
 ```
 
-![Alt text](notification-screenshot.png?|width="200" height="400")
+![Alt text](notification-screenshot.png|width="200" height="400")
