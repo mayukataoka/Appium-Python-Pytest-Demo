@@ -3,7 +3,7 @@
 
 https://github.com/mayukataoka/Appium-Python-Pytest-Demo/blob/master/test/test_android_notification.py
 
-#### Test execution and output.
+#### Command line test execution.
 ```
 MAYUs-MacBook-Pro:Appium-Python-Pytest-Demo mayukataoka$ pytest test/test_android_notification.py 
 ========================================================================================================== test session starts ===========================================================================================================
