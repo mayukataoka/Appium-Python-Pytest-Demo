@@ -54,4 +54,4 @@ or
 
 ```
 
-![Alt text](notification-screenshot.png|width="200" height="400")
+<img src="https://github.com/mayukataoka/Appium-Python-Pytest-Demo/blob/master/notification-screenshot.png width="200" height="400">
