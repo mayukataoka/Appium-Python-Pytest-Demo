@@ -53,5 +53,4 @@ or
         assert notification_from_joe.text == 'Joe'
 
 ```
-
-<img src="https://github.com/mayukataoka/Appium-Python-Pytest-Demo/blob/master/notification-screenshot.png width="200" height="400">
+<img src="notification-screenshot.png" width="200" height="400">
