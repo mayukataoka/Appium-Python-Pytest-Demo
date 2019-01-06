@@ -25,13 +25,13 @@ or
         driver.start_activity(self.PACKAGE, self.ACTIVITY)
 
 ```
-1. Click on the button to trigger a notification
-1. Open the notification screen. 
+2. Click on the button to trigger a notification
+3. Open the notification screen. 
 
 ```
         driver.open_notifications()
 ```
-1. Verify that the correct notification appeared. 
+4. Verify that the correct notification appeared. 
 ```
         notification_from_joe = driver.find_element_by_id('android:id/title')
         assert notification_from_joe.text == 'Joe'
