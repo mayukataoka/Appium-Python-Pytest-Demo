@@ -4,7 +4,7 @@ https://github.com/mayukataoka/Appium-Python-Pytest-Demo/blob/master/test/test_a
 
 ## Steps
 
-### Open the screen with a button that triggers a notification
+### 1 Open the screen with a button that triggers a notification
 
 In stead of opening each screen one by one to reach the destination screen, directly open target activity.
 
@@ -17,12 +17,12 @@ In stead of opening each screen one by one to reach the destination screen, dire
                 'deviceName': os.getenv('ANDROID_DEVICE_VERSION') or 'emulator-5554',
                 'appActivity': self.INCOMING_MESSAGE_ACTIVITY
             }
-,,,
+```
 
 or 
 
 ```
-
+        driver.start_activity(self.PACKAGE, self.ACTIVITY)
 
 ```
 
