@@ -2,4 +2,33 @@
 
 https://github.com/mayukataoka/Appium-Python-Pytest-Demo/blob/master/test/test_android_notification.py
 
+## Steps
+
+### Open the screen with a button that triggers a notification
+
+In stead of opening each screen one by one to reach the destination screen, directly open target activity.
+
+```
+            desired_capabilities={
+                'app': ANDROID_APP_PATH,
+                'platformName': 'Android',
+                'automationName': 'UIAutomator2',
+                'platformVersion': os.getenv('ANDROID_PLATFORM_VERSION') or '9',
+                'deviceName': os.getenv('ANDROID_DEVICE_VERSION') or 'emulator-5554',
+                'appActivity': self.INCOMING_MESSAGE_ACTIVITY
+            }
+,,,
+
+or 
+
+```
+
+
+```
+
+
+
+
+
+
 ![Alt text](notification-screenshot.png?raw=true)
