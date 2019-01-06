@@ -1,8 +1,8 @@
-## Simple notification Android test demo. 
+## Simple notification test with Appium, Python and Pytest fixture. 
 
 https://github.com/mayukataoka/Appium-Python-Pytest-Demo/blob/master/test/test_android_notification.py
 
-#### Steps
+#### Test Steps
 
 1. Open the screen with a button that triggers a notification. 
 
