@@ -13,6 +13,7 @@ $ pytest test/test_android_notification.py
 #### Test steps
 1. Start an emulator from command line. 
 ```
+cd /Users/<username>/Library/Android/sdk/emulator
 ./emulator -avd Pixel_2_API_28
 ``` 
 2. Open the screen with a button that triggers a notification. 
@@ -48,3 +49,8 @@ or
         assert notification_from_joe.text == 'Joe'
 
 ```
+6. Stop the emulator.
+```
+adb emu kill
+```
+
