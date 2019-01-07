@@ -13,22 +13,23 @@ $ pytest test/test_android_notification.py
 #### Test steps
 1. Start an emulator from command line. 
 ```
+export AVD=Pixel_2_API_28 
 cd /Users/<username>/Library/Android/sdk/emulator
-./emulator -avd Pixel_2_API_28
+./emulator -avd $AVD
 ``` 
 2. Open the screen with a button that triggers a notification. 
 
-In stead of opening each screen one by one to reach the destination screen, directly open target activity.
+Instead of opening each screen one by one to reach the destination screen, directly open target activity.
 
 ```
-            desired_capabilities={
-                'app': ANDROID_APP_PATH,
-                'platformName': 'Android',
-                'automationName': 'UIAutomator2',
-                'platformVersion': os.getenv('ANDROID_PLATFORM_VERSION') or '9',
-                'deviceName': os.getenv('ANDROID_DEVICE_VERSION') or 'emulator-5554',
-                'appActivity': self.INCOMING_MESSAGE_ACTIVITY
-            }
+    desired_caps = {
+        'deviceName': os.getenv('UDID', 'Pixel_2_API_28'),
+        'udid': os.getenv('UDID', 'emulator-5556'),
+        'platformName': 'Android',
+        'app': ANDROID_APP_PATH,
+        'automationName': 'UIAutomator2',
+        'appActivity': INCOMING_MESSAGE_ACTIVITY
+    }
 ```
 
 or 
