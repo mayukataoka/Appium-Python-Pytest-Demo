@@ -11,8 +11,11 @@ $ pytest test/test_android_notification.py
 ```
 
 #### Test steps
-
-1. Open the screen with a button that triggers a notification. 
+1. Start an emulator from command line. 
+```
+./emulator -avd Pixel_2_API_28
+``` 
+2. Open the screen with a button that triggers a notification. 
 
 In stead of opening each screen one by one to reach the destination screen, directly open target activity.
 
@@ -33,13 +36,13 @@ or
         driver.start_activity(self.PACKAGE, self.ACTIVITY)
 
 ```
-2. Click on the button to trigger a notification
-3. Open the notification screen. 
+3. Click on the button to trigger a notification
+4. Open the notification screen. 
 
 ```
         driver.open_notifications()
 ```
-4. Verify that the correct notification appeared. 
+5. Verify that the correct notification appeared. 
 ```
         notification_from_joe = driver.find_element_by_id('android:id/title')
         assert notification_from_joe.text == 'Joe'
