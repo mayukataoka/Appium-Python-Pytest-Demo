@@ -72,3 +72,5 @@ PATH=$PATH:$JAVA_HOME/bin
 sdkmanager "platform-tools" "platforms;android-26"
 sdkmanager "system-images;android-26;google_apis;x86"
 ```
+### Create AVD
+avdmanager create avd -n TestAvd -k "system-images;android-26;google_apis;x86" -d "Nexus 5X"
