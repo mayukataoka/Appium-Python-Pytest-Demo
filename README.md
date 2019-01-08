@@ -54,4 +54,21 @@ or
 ```
 adb emu kill
 ```
+## Test env
 
+### .bash_profile 
+```
+export ANDROID_HOME=/Users/<YOUR-USERNAME>/Library/Android/sdk
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+PATH=$PATH:$JAVA_HOME/bin
+```
+### Update SDK tools and packages
+```
+sdkmanager "platform-tools" "platforms;android-26"
+sdkmanager "system-images;android-26;google_apis;x86"
+```
