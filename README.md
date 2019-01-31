@@ -1,4 +1,4 @@
-## Simple notification test with Appium, Python and Pytest fixture. 
+## Simple system notification test with Appium, Python and Pytest fixture. 
 <img src="notification-screenshot.png" width="400" height="400">
 
 #### Test code
